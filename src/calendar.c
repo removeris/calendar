@@ -1,15 +1,12 @@
 #include <time.h>
-#include <stdbool.h>
 
 #include "calendar_time.h"
 #include "print.h"
 
-#include <stdio.h>
-
 int main(void) {
 
 	time_t raw_time;
-        struct tm *time_info;
+	struct tm *time_info;
 
         raw_time = time(NULL);
 	time_info = localtime(&raw_time);
